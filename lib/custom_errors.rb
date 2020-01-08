@@ -17,6 +17,9 @@ class Person
   #custom errors for Person class
   
   class PartnerError < StandardError
+    def message
+      "you must give the get_married method an argumant of an instance of the person class!"
+    end
   end
   
 end
