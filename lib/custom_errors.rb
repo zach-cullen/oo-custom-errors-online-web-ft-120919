@@ -9,8 +9,15 @@ class Person
     self.partner = person
     person.partner = self
   end
-
+  
+  #custom errors for Person class
+  
+  class PartnerError < StandardError
+  end
+  
 end
+
+
 
 beyonce = Person.new("Beyonce")
 beyonce.get_married("Jay-Z")
